@@ -30,6 +30,13 @@ li a {
   padding-right: 50px;
 }
 
+.grouppic {
+  max-width:500px;
+  max-height:300px;
+  width: auto;
+  height: auto;
+}
+
 .plan {
   font-weight: bold; 
 }
