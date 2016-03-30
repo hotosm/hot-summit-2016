@@ -1,0 +1,4 @@
+baseurl: ''
+permalink: pretty
+exclude: [src, CNAME]
+markdown: rdiscount
