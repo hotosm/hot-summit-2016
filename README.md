@@ -1,5 +1,3 @@
-# HOT Summit
-## April 30 - May 2
-### http://summit.hotosm.org/
-
-![summit logo](https://raw.githubusercontent.com/hotosm/hot-summit/gh-pages/img/logo.png)
+# HOT Summit 2016
+## Date and venue is to be defined
+### http://summit2106.hotosm.org/
