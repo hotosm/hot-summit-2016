@@ -85,7 +85,7 @@ a:hover { color:#68c7dd; }
   }
 .site-navigation a {
   height: 26px;
-  margin-right: 25px
+  margin: 0px 14px
   }
 .site-navigation a,
 .site-navigation a:hover {
@@ -386,11 +386,13 @@ section:target { display:block!important; }
 
 .navigation-container{
   height: 20px;
+  padding-left: 10px;
 }
 
 @media only screen and (max-width: 640px) {
   .navigation-container{
     height: auto;
+    padding-left: 0;
   }
   .site-navigation a{
     height: 40px;
