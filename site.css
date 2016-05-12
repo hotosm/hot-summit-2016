@@ -462,7 +462,7 @@ h1.ready {
 }
 
 .pad2y-venue{
-  padding-top: 10px;
+  padding: 2em;
 }
 
 .grey-text{
@@ -481,3 +481,17 @@ h1.ready {
 .participating.bronze {
   height: 45px;
 }
+
+.red-block{
+  width: 200px;
+  margin: 0.5em;
+  display: inline-block;
+}
+
+.button-box{
+  text-align: center;
+  margin: 0 auto 2em;
+}
+
+
+a{ transition: color 0.2s; }
