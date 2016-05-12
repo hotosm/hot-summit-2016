@@ -84,6 +84,7 @@ a:hover { color:#68c7dd; }
   z-index:10000;
   }
 .site-navigation a {
+  height: 26px;
   margin-right: 25px
   }
 .site-navigation a,
@@ -383,6 +384,21 @@ input[type='submit'],
 
 section:target { display:block!important; }
 
+.navigation-container{
+  height: 20px;
+}
+
+@media only screen and (max-width: 640px) {
+  .navigation-container{
+    height: auto;
+  }
+  .site-navigation a{
+    height: 40px;
+    line-height: 27px;
+  }
+}
+
+
 @media only screen and (max-width: 640px) {
   fieldset.with-icon { margin:0 0 -1px; }
   .round-right { border-radius:0 0 3px 3px; }
@@ -398,6 +414,7 @@ section:target { display:block!important; }
     display:block;
     border:none;
     border-bottom:none;
+    margin: 0;
     }
   .site-navigation a.strong.active,
   .site-navigation a.strong:hover {
@@ -440,6 +457,14 @@ h1.ready {
 
 #logo {
   width: 250px;
+}
+
+.pad2y-venue{
+  padding-top: 10px;
+}
+
+.grey-text{
+  color: grey;
 }
 
 .participating {
