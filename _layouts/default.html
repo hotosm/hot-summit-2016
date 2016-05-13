@@ -40,17 +40,19 @@
 </head>
 <body class='{% if page.url == "/index.html" %}front{% endif %}'>
 
-<nav class='pad2 fill-red site-navigation center space'>
+<nav class='pad2 fill-red site-navigation center'>
+  <nav class='navigation-container'>
   <a class='strong {% if page.url == "{{site.baseurl}}/index.html" or page.url == "{{site.baseurl}}/" %}active{% endif %}' href='{{site.baseurl}}/'>Home</a>
 <!--   <a class='strong {% if page.url contains "program" %}active{% endif %}' href='{{site.baseurl}}/program/'>Program</a> -->
 <!--   <a class='strong {% if page.url contains "talk" %}active{% endif %}' href='{{site.baseurl}}/talk/'>Propose a Talk</a> -->
-<!--   <a class='strong {% if page.url contains "venue" %}active{% endif %}' href='{{site.baseurl}}/venue/'>Venue Info</a> -->
+  <a class='strong {% if page.url contains "venue" %}active{% endif %}' href='{{site.baseurl}}/venue/'>Venue Info</a>
 <!--   <a class='strong {% if page.url contains "scholarship" %}active{% endif %}' href='{{site.baseurl}}/scholarship/'>Scholarship</a> -->
   <a class='strong {% if page.url contains "about" %}active{% endif %}' href='{{site.baseurl}}/about/'>About</a>
 <!--  <a class='strong {% if page.url contains "register" %}active{% endif %}' href='{{site.baseurl}}/register/'>Register</a> -->
 <!--   <a href='https://hotsummit2016.eventbrite.com' target='_blank' class='strong'>Register</a> -->
- <a class='strong {% if page.url contains "sponsor" %}active{% endif %}' href='{{site.baseurl}}/sponsor/'>Sponsor</a>
-  <a href='https://twitter.com/search?q=%23hotsummit&src=typd' target='_blank' class='hide-mobile icon twitter inline small strong dark'>#hotsummit</a>
+  <a class='strong {% if page.url contains "sponsor" %}active{% endif %}' href='{{site.baseurl}}/sponsor/'>Sponsor</a>
+  <a href='https://twitter.com/search?q=%23hotsummit&src=typd' target='_blank' class='hide-mobile inline small strong dark'><img src='{{ site.baseurl }}/img/twitter.svg' class = 'icon-img'/> #hotsummit</a>
+  </nav>
 </nav>
 
 <!--
