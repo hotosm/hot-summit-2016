@@ -457,8 +457,19 @@ h1.ready {
         width: 100%; }
 }
 
+.logo-main{
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  text-align:center;
+}
+
+.bold{
+  font-weight: bold;
+}
+
 #logo {
-  width: 250px;
+  width: 350px;
 }
 
 .pad2y-venue{
