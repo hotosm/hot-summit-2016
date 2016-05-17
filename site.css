@@ -526,6 +526,7 @@ a{ transition: color 0.2s; }
 
 .sponser--logos img{
   max-width: 140px;
+  max-height: 80px;
   margin: 0.5em;
   display: inline-block;
   vertical-align: middle;
