@@ -511,3 +511,30 @@ h1.ready {
 }
 
 a{ transition: color 0.2s; }
+
+.sponser--logos__container{
+  padding: 1em 2em;
+  margin: 0 1.5em 1em;
+}
+
+.sponser--logos{
+}
+
+.height-fix{
+  padding-top: 1em;
+}
+
+.sponser--logos img{
+  max-width: 140px;
+  margin: 0.5em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+ #mc_embed_signup{
+  background:#fff; 
+  clear:left; 
+  font:14px Helvetica,Arial,sans-serif; 
+  width:100%;
+  padding: 1em 0 3.5em;
+}
