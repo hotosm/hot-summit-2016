@@ -16,15 +16,9 @@
   <meta property='og:title' content='{{page.title | replace:"'","&lsquo;"}}' />
   <meta name='twitter:description' content='{{page.content | markdownify | strip_html | trim_spaces | truncatewords: 30 | escape | replace:"'","&lsquo;" }}' />
   <meta property='og:description' content='{{page.content | markdownify | strip_html | trim_spaces | truncatewords: 30 | escape | replace:"'","&lsquo;" }}' />
-  {% if page.image %}
-    <meta name='twitter:image' content='{{page.image | replace:"https:","http:"}}' />
-    <meta name='st:image' content='{{page.image | replace:"https:","http:"}}' />
-    <meta property='og:image' content='{{page.image | replace:"https:","http:"}}' />
-  {% else %}
-    <meta name='twitter:image' content='{{site.baseurl}}/img/default-twitter-card.png' />
-    <meta name='st:image' content='{{site.baseurl}}/img/default-twitter-card.png' />
-    <meta property='og:image' content='{{site.baseurl}}/img/default-twitter-card.png' />
-  {% endif %}
+  <meta name='twitter:image' content='{{site.baseurl}}/img/HOTsummit2016_logo.svg' />
+  <meta name='st:image' content='{{site.baseurl}}/img/HOTsummit2016_logo.svg' />
+  <meta property='og:image' content='{{site.baseurl}}/img/HOTsummit2016_logo.svg' />
   <meta property='og:type' content='website' />
   <meta name='twitter:card' content='summary_large_image' />
 
