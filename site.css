@@ -398,6 +398,9 @@ section:target { display:block!important; }
     height: 40px;
     line-height: 27px;
   }
+  .logo-main{
+    display: none;
+  }
 }
 
 
