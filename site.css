@@ -515,19 +515,19 @@ h1.ready {
 
 a{ transition: color 0.2s; }
 
-.sponser--logos__container{
+.sponsor--logos__container{
   padding: 1em 2em;
   margin: 0 1.5em 1em;
 }
 
-.sponser--logos{
+.sponsor--logos{
 }
 
 .height-fix{
   padding-top: 1em;
 }
 
-.sponser--logos img{
+.sponsor--logos img{
   max-width: 140px;
   max-height: 80px;
   margin: 0.5em;
