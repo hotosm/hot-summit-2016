@@ -39,13 +39,13 @@ published: true
 				</td>
 
 			{% elsif e.type == "session" %}
-				<td style="padding-top: 3em;">{{ e.time }}</td>
+				<td id="{{ e.event | remove: ' ' }}" style="padding-top: 3em;">{{ e.time }}</td>
 				<td class="event--cell__padding">
 					<div class="event--title">{{ e.event }}</div>
 					<div class="event--location">{{ e.location }}</div>
 					<div class="event--host">
 						{% for s in e.speakers %}
-							<a href="">{{ s.name }}</a>, <span>{{ s.org }}</span>
+							<p><a href="{{ site.baseurl }}/speakers/#{{ s.name | remove: ' ' }}">{{ s.name }}</a>, <span>{{ s.org }}</span></p>
 						{% endfor %}
 					</div>
 						{% if e.description %}
@@ -56,17 +56,17 @@ published: true
 			{% elsif e.type == "split-session" %}
 				<td style="padding-top: 3em;">{{ e.time }}</td>
 				<td class= "tester">
-					<div class="event--split event--cell__padding">
+					<div class="event--split event--cell__padding" id="{{ e.session-a-event | remove: ' '}}">
 						<div class="event--title">{{ e.session-a-event }}</div>
 						<div class="event--location">{{ e.session-a-location }}</div>
 						<div class="event--host">
 							{% for s in e.session-a-speaker %}
-								<a href="">{{ s.name }}</a>, <span>{{ s.org }} </span>
+								<p><a href="">{{ s.name }}</a>, <span>{{ s.org }} </span></p>
 							{% endfor %}
 						</div>
 						<div class="event--description">{{ e.session-a-description }}</div>		
 					</div>
-					<div class="event--split event--cell__padding event--split__right">
+					<div class="event--split event--cell__padding event--split__right" id="{{ e.session-b-event | remove: ' '}}">
 						<div class="event--title">{{ e.session-b-event }}</div>
 						<div class="event--location">{{ e.session-b-location }}</div>
 						<div class="event--host">
@@ -80,184 +80,6 @@ published: true
 			{% endif %}
 			</tr>
 		{% endfor %}
-
-
-<!-- 
-		<tr>
-		</tr>
-		<tr>
-			<td class="event--organization">08:45 - 09:00</td>
-			<td class="event--organization event--cell__padding">
-				<span>Welcome</span>
-				<div class="event--location">Malawi Hall</div>
-			</td>
-		</tr>
-
-		<tr>
-		</tr>
-
-		<tr>
-			<td style="padding-top: 3em;">09:25 - 09:45</td>
-			<td class="event--cell__padding">
-				<div class="event--title">Maptime DC: Intro to OSM for Humanitarian Response</div>
-				<div class="event--location">Hall B</div>
-				<div class="event--host">Miles Kilometers, <span>Ironborn</span></div>
-				<div class="event--description">The Peace Corps is currently conducting a pilot project to engage middle and high school students in the DC and Virginia areas in OpenStreetMap. Social studies students map Peace Corps HOT tasks as they study the role of GIS in international development and connect via video chat with the current Peace Corps Volunteer whose community they are mapping.</div>				
-			</td>
-		</tr>
-
-		<tr>
-			<td class="event--organization">09:45 - 10:00</td>
-			<td class="event--organization event--cell__padding">
-				<span>Break</span>
-				<div class="event--location">Malawi Hall</div>
-			</td>
-		</tr>
-
-		<tr>
-			<td style="padding-top: 3em;">10:00 - 10:30</td>
-			<td class="event--cell__padding">
-				<div class="event--title">Lightening Talks</div>
-				<div class="event--location">Malawi Hall</div>
-				<div class="event--host">Miles Kilometers, <span>Ironborn</span></div>
-				<div class="event--description">The Peace Corps is currently conducting a pilot project to engage middle and high school students in the DC and Virginia areas in OpenStreetMap. Social studies students map Peace Corps HOT tasks as they study the role of GIS in international development and connect via video chat with the current Peace Corps Volunteer whose community they are mapping.</div>				
-			</td>
-		</tr>
-
-		<tr>
-			<td class="event--organization">10:30 - 10:45</td>
-			<td class="event--organization event--cell__padding">
-				<span>Break</span>
-				<div class="event--location">Malawi Hall</div>
-			</td>
-		</tr>
-
-		<tr>
-		</tr>
-
-		<tr>
-			<td class="event--organization">12:30 - 13:30</td>
-			<td class="event--organization event--cell__padding">
-				<span>Lunch</span>
-				<div class="event--location">Malawi Hall</div>
-			</td>
-		</tr>
-
-		<tr>
-			<td style="padding-top: 3em;">13:30 - 14:30</td>
-			<td class="event--cell__padding">
-				<div class="event--title">Maptime DC: Intro to OSM for Humanitarian Response</div>
-				<div class="event--location">Hall B</div>
-				<div class="event--host">Miles Kilometers, <span>Ironborn</span></div>
-				<div class="event--description">The Peace Corps is currently conducting a pilot project to engage middle and high school students in the DC and Virginia areas in OpenStreetMap. Social studies students map Peace Corps HOT tasks as they study the role of GIS in international development and connect via video chat with the current Peace Corps Volunteer whose community they are mapping.</div>				
-			</td>
-		</tr>
-
-		<tr>
-			<td class="event--organization">14:30 - 14:45</td>
-			<td class="event--organization event--cell__padding">
-				<span>Community Photo</span>
-				<div class="event--location">Malawi Hall</div>
-			</td>
-		</tr>
-
-		<tr>
-			<td style="padding-top: 3em;">14:45 - 15:15</td>
-			<td class="event--cell__padding">
-				<div class="event--title">Lightning Talks</div>
-				<div class="event--location">Hall B</div>
-				<div class="event--host">Miles Kilometers, <span>Ironborn</span></div>
-				<div class="event--description">The Peace Corps is currently conducting a pilot project to engage middle and high school students in the DC and Virginia areas in OpenStreetMap. Social studies students map Peace Corps HOT tasks as they study the role of GIS in international development and connect via video chat with the current Peace Corps Volunteer whose community they are mapping.</div>				
-			</td>
-		</tr>
-
-		<tr>
-			<td class="event--organization">15:15 - 15:30</td>
-			<td class="event--organization event--cell__padding">
-				<span>Break</span>
-				<div class="event--location">Malawi Hall</div>
-			</td>
-		</tr>
-
-		<tr>
-			<td style="padding-top: 3em;">15:30 - 16:15</td>
-			<td class= "tester">
-				<div class="event--split event--cell__padding">
-					<div class="event--title">Humanitarian OpenStreetMap Team: Opportunities and Challenges for the Future</div>
-					<div class="event--location">Malawi Hall</div>
-					<div class="event--host">Ned Stark, <span>Lord of Winterfell</span></div>
-					<div class="event--description">The Peace Corps is currently conducting a pilot project to engage middle and high school students in the DC and Virginia areas in OpenStreetMap. Social studies students map Peace Corps HOT tasks as they study the role of GIS in international development and connect via video chat with the current Peace Corps Volunteer whose community they are mapping.</div>		</div>
-				</div>
-				<div class="event--split event--cell__padding event--split__right">
-					<div class="event--title">Growing HOT's Unique Role</div>
-					<div class="event--location">Malawi Hall</div>
-					<div class="event--host">Ramsay Bolton, <span>Lord of Winterfell</span></div>
-					<div class="event--description">The Peace Corps is currently conducting a pilot project to engage middle and high school students in the DC and Virginia areas in OpenStreetMap. Social studies students map Peace Corps HOT tasks as they study the role of GIS in international development and connect via video chat with the current Peace Corps Volunteer whose community they are mapping.</div>		</div>
-					</div>
-			</td>
-		</tr>
-
-		<tr>
-			<td class="event--organization">16:15 - 16:30</td>
-			<td class="event--organization event--cell__padding">
-				<span>Break</span>
-				<div class="event--location">Malawi Hall</div>
-			</td>
-		</tr>
-
-		<tr>
-			<td style="padding-top: 3em;">16:30 - 17:15</td>
-			<td class= "tester">
-				<div class="event--split event--cell__padding">
-					<div class="event--title">Humanitarian OpenStreetMap Team: Opportunities and Challenges for the Future</div>
-					<div class="event--location">Malawi Hall</div>
-					<div class="event--host">Ned Stark, <span>Lord of Winterfell</span></div>
-					<div class="event--description">The Peace Corps is currently conducting a pilot project to engage middle and high school students in the DC and Virginia areas in OpenStreetMap. Social studies students map Peace Corps HOT tasks as they study the role of GIS in international development and connect via video chat with the current Peace Corps Volunteer whose community they are mapping.</div>		</div>
-				</div>
-				<div class="event--split event--cell__padding event--split__right">
-					<div class="event--title">Growing HOT's Unique Role</div>
-					<div class="event--location">Malawi Hall</div>
-					<div class="event--host">Ramsay Bolton, <span>Lord of Winterfell</span></div>
-					<div class="event--description">The Peace Corps is currently conducting a pilot project to engage middle and high school students in the DC and Virginia areas in OpenStreetMap. Social studies students map Peace Corps HOT tasks as they study the role of GIS in international development and connect via video chat with the current Peace Corps Volunteer whose community they are mapping.</div>		</div>
-					</div>
-			</td>
-		</tr>
-
-		<tr>
-			<td class="event--organization">17:15 - 17:30</td>
-			<td class="event--organization event--cell__padding">
-				<span>Break</span>
-				<div class="event--location">Malawi Hall</div>
-			</td>
-		</tr>
-
-		<tr>
-			<td class="event--organization">17:30 - 17:45</td>
-			<td class="event--organization event--cell__padding">
-				<span>Closing</span>
-				<div class="event--location">Malawi Hall</div>
-			</td>
-		</tr>
-
-		<tr>
-			<td style="padding-top: 3em;">17:45 - 18:15</td>
-			<td class="event--cell__padding">
-				<div class="event--title">Walk to MSF</div>
-				<div class="event--location">Hall B</div>
-				<div class="event--host">Miles Kilometers, <span>Ironborn</span></div>
-				<div class="event--description">The Peace Corps is currently conducting a pilot project to engage middle and high school students in the DC and Virginia areas in OpenStreetMap. Social studies students map Peace Corps HOT tasks as they study the role of GIS in international development and connect via video chat with the current Peace Corps Volunteer whose community they are mapping.</div>				
-			</td>
-		</tr>
-
-		<tr>
-			<td style="padding-top: 3em;">18:15 - 21:00</td>
-			<td class="event--cell__padding">
-				<div class="event--title">Mapathon</div>
-				<div class="event--location">Hall B</div>
-				<div class="event--host">Miles Kilometers, <span>Ironborn</span></div>
-				<div class="event--description">The Peace Corps is currently conducting a pilot project to engage middle and high school students in the DC and Virginia areas in OpenStreetMap. Social studies students map Peace Corps HOT tasks as they study the role of GIS in international development and connect via video chat with the current Peace Corps Volunteer whose community they are mapping.</div>				
-			</td>
-		</tr>		  -->
 	</tbody>
 </table>
 

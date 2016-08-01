@@ -1,9 +1,9 @@
 ---
 img: speaker_dylan
-name: Dylan Moriarty
-organization: Cartographer & Designer at Development Seed
+name: Keynote Speaker
+organization: Example
 
-talk: Keynote 2
+talk: Session 2A
 
 twitter-handle: DylanMoriarty
 twitter-link: https://twitter.com/DylanMoriarty

@@ -20,13 +20,15 @@ published: true
 	<div class='speaker--container'>
 
 	 	{% for p in site.speaker-list %}
-			<div class='speaker--card'>
-				<div class='speaker--image' style='background-image: url("../img/speaker-imgs/{{ p.img }}.jpg");'></div>
-				<div class='speaker--title'>{{ p.name }}</div>
-				<div class='speaker--information'>{{ p.organization }}</div>
-				<div class='speaker--contact'>TALKS</div>
-				<div class='speaker--talks'><a href="{{ p.talk-link }}">{{ p.talk }}</a></div>
-				<div class='speaker--twitter'><a href="{{ p.twitter-link }}"><img src="../img/twitter.svg"></img>{{ p.twitter-handle }}</a></div>
+	 		<div id = "{{ p.name | remove: ' '}}">
+				<div class='speaker--card'>
+					<div class='speaker--image' style='background-image: url("../img/speaker-imgs/{{ p.img }}.jpg");'></div>
+					<div class='speaker--title'>{{ p.name }}</div>
+					<div class='speaker--information'>{{ p.organization }}</div>
+					<div class='speaker--contact'>TALKS</div>
+					<div class='speaker--talks'><a href="{{ site.baseurl }}/program/#{{ p.talk | remove: ' ' }}">{{ p.talk }}</a></div>
+					<div class='speaker--twitter'><a href="{{ p.twitter-link }}"><img src="../img/twitter.svg"></img>{{ p.twitter-handle }}</a></div>
+				</div>
 			</div>
 		{% endfor %}
 

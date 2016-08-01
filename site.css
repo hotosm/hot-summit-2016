@@ -557,7 +557,6 @@ a{ transition: color 0.2s; }
 
 .event--location{
   float: right;
-  margin-right: 1em;
   background-color: #f6f6f6;
   border-radius: 4px;
   padding: 3px 10px 4px;
@@ -620,6 +619,15 @@ td{
   max-width: 600px;
 }
 
+.event--organization .event--location{
+    margin-right: 1em;
+}
+
+.event--host p{
+  margin:0;
+  line-height: 24px;
+}
+
 .tester{
   display: flex;
   flex-wrap: wrap;
@@ -637,7 +645,7 @@ thead th:nth-child(2n){
 @media only screen and (max-width: 1052px) {
   .event--split__right{
     border-left: 0;
-    border-top: 1px solid #ddd;
+    border-top: 1px dashed #ddd;
   }
 }
 
