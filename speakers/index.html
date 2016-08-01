@@ -18,29 +18,17 @@ published: true
 <div class='limiter pad4y clearfix'>
 
 	<div class='speaker--container'>
-		<div class='speaker--card'>
-			<div class='speaker--image'><img src=''></img></div>
-			<div class='speaker--title'>Dylan Moriarty</div>
-			<div class='speaker--information'>Cartographer & Designer at Development Seed</div>
-			<div class='speaker--contact'>TALKS</div>
-			<div class='speaker--talks'><a href="">Maptime DC: Intro to OSM for Humanitarian Response</a></div>
-			<div class='speaker--twitter'><a href=""><img src="../img/twitter.svg"></img>@DyanMoriarty</a></div>
-		</div>
 
-		<div class='speaker--card'>
-			<div class='speaker--image'><img src=''></img></div>
-			<div class='speaker--title'>Walter Swimiwalty</div>
-			<div class='speaker--information'></div>
-			<div class='speaker--contact'></div>
-		</div>
-
-		<div class='speaker--card'>
-			<div class='speaker--image'><img src=''></img></div>
-			<div class='speaker--title'>Jingle Bells</div>
-			<div class='speaker--information'></div>
-			<div class='speaker--contact'></div>
-		</div>
-
+	 	{% for p in site.speaker-list %}
+			<div class='speaker--card'>
+				<div class='speaker--image' style='background-image: url("../img/speaker-imgs/{{ p.img }}.jpg");'></div>
+				<div class='speaker--title'>{{ p.name }}</div>
+				<div class='speaker--information'>{{ p.organization }}</div>
+				<div class='speaker--contact'>TALKS</div>
+				<div class='speaker--talks'><a href="{{ p.talk-link }}">{{ p.talk }}</a></div>
+				<div class='speaker--twitter'><a href="{{ p.twitter-link }}"><img src="../img/twitter.svg"></img>{{ p.twitter-handle }}</a></div>
+			</div>
+		{% endfor %}
 
 	</div>
 
