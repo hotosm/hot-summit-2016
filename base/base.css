@@ -828,7 +828,7 @@ table {
   background-color:transparent;
   border-collapse:collapse;
   border-spacing:0;
-  margin-bottom:20px;
+  margin-bottom:1em;
   }
   table th{
     text-align: left;
@@ -841,18 +841,18 @@ table {
     text-align:left;
     vertical-align:top;
     border:1px solid #ccc;
-    border-left-color: #dedede;
-    border-right-color: #dedede;
+    border-left-color: rgba(0,0,0,0);
+    border-right-color: rgba(0,0,0,0);
   }
   table th:first-child{
   }
   table td:first-child {
     line-height: 24px;
-    padding:1em 0 8px 1em;
+    padding:2em 0 8px 1em;
     min-width:116px;
+    line-height:28px;
   }
   table th {
-    font-weight:700;
     }
   table th:last-child{
     float: right;

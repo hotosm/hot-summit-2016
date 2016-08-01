@@ -543,42 +543,43 @@ a{ transition: color 0.2s; }
   padding: 1em 0 3.5em;
 }
 
+/** Schedule
+===================================*/
+
 .event--title{
   font-weight: 800;
   font-size: 1.5em;
   float: left;
   margin-bottom: 0.5em;
   line-height: 24px;
+  font-family: 'Kreon', serif;
 }
 
 .event--location{
   float: right;
   margin-right: 1em;
-  background-color: rgba(0,0,0,0.08);
+  background-color: #f6f6f6;
   border-radius: 4px;
   padding: 3px 10px 4px;
-  max-width: 102px;
+  max-width: 104px;
 }
 
 .event--host{
   clear: both;
 }
 
+.event--host a{
+  font-weight: 300;
+}
+
 .event--host span{
   font-style: italic;
 }
 
-.event--description{
-  padding: 1.5em 1em 1em 0;
-  max-width: 600px;
-}
-
-.event--organization{
-  background-color: #eee;
-}
-
 .event--organization span{
   font-weight: 800;
+  font-family: 'Kreon', serif;
+  font-size: 1.2em;
 }
 
 td{
@@ -595,13 +596,28 @@ td{
 }
 
 .event--split__right{
-  border-left: 1px solid #ddd;
+  border-left: 1px dashed #ddd;
   border-top: 0;
   padding-left: 1em;
 }
 
 .event--cell__padding{
-  padding:1em 0 1em 1em;
+  padding:3em 1em 3em 3em;
+}
+
+.event--organization{
+  background-color: #f0f0f0;
+  line-height:28px;
+  padding: 2em 0 1.5em 3em;
+}
+
+.event--cell__time{
+  margin-top: 1em;
+}
+
+.event--description{
+  padding: 1.5em 1em 1em 0;
+  max-width: 600px;
 }
 
 .tester{
@@ -610,9 +626,87 @@ td{
   margin: -1px;
 }
 
+thead th:first-child{
+  width:116px;
+}
+
+thead th:nth-child(2n){
+  padding-left: 3em;
+}
+
 @media only screen and (max-width: 1052px) {
   .event--split__right{
     border-left: 0;
     border-top: 1px solid #ddd;
   }
+}
+
+/** Spakers
+===================================*/
+
+.speaker--image{
+    background-color: rgba(0,0,0,0.1);
+    margin: 0em auto 2em auto;
+    width:120px;
+    height:120px;
+    border-radius: 50%;
+}
+
+.speaker--title{
+  font-weight: 800;
+  font-size:1.2em;
+  margin-bottom:0.5em;
+}
+
+.speaker--contact{
+  font-weight: 800;
+  color: #bbb;
+  margin-top:1em;
+}
+
+.speaker--talks{
+  margin-top:0.5em;
+  font-size:0.9em;
+  line-height: 18px;
+  width:100%;
+  padding-bottom:1em;
+  margin-bottom:1em;
+  border-bottom:1px solid #ddd;
+}
+
+.speaker--twitter{
+  margin-top:0.5em;
+  font-size:0.9em;
+}
+
+.speaker--twitter img{
+  width: 16px;
+  height: 16px;
+  margin-top:2px;
+  opacity: 0.2;
+}
+
+.speaker--information{
+  font-style: italic;
+  margin-bottom:0.5em;
+  padding-bottom:1em;
+  border-bottom:1px solid #ddd;
+}
+
+.speaker--container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.speaker--card{
+    margin: 1em;
+    width: 250px;
+    padding: 2em;
+    background-color: #f0f0f0;
+    border-radius: 1em;
+    border-bottom: 3px solid #ddd;
 }
