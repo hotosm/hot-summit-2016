@@ -648,8 +648,8 @@ thead th:nth-child(2n){
     background-color: rgba(0,0,0,0.1);
     border: 3px solid #ccc;
     margin: 0em auto 2em auto;
-    width:120px;
-    height:120px;
+    width:150px;
+    height:150px;
     border-radius: 50%;
     background-image: url(../img/speaker-imgs/speaker_dylan.jpg);
     background-position: center;
