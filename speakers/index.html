@@ -26,8 +26,17 @@ published: true
 					<div class='speaker--title'>{{ p.name }}</div>
 					<div class='speaker--information'>{{ p.organization }}</div>
 					<div class='speaker--contact'>TALKS</div>
+					{% if p.talk %}
 					<div class='speaker--talks'><a href="{{ site.baseurl }}/program/#{{ p.talk | remove: ' ' }}">{{ p.talk }}</a></div>
-					<div class='speaker--twitter'><a href="{{ p.twitter-link }}"><img src="../img/twitter.svg"></img>{{ p.twitter-handle }}</a></div>
+					{% endif %}
+					{% if p.talks %}
+						{% for t in p.talks %}
+							<div class='speaker--talks'><a href="{{ site.baseurl }}/program/#{{ t.talk | remove: ' ' }}">{{ t.talk }}</a></div>
+						{% endfor %}
+					{% endif %}
+					{% if p.twitter-handle %}
+					<div class='speaker--twitter'><a href="https://twitter.com/{{ p.twitter-handle }}"><img src="../img/twitter.svg"></img>{{ p.twitter-handle }}</a></div>
+					{% endif %}
 				</div>
 			</div>
 		{% endfor %}
