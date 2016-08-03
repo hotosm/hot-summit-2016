@@ -1,5 +1,5 @@
 ---
-img: speaker_bbq
+img: dummy_f
 name: Céline Jacquin
 organization: 
 

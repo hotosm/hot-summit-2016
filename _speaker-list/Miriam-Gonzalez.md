@@ -1,5 +1,5 @@
 ---
-img: speaker_bbq
+img: dummy_f
 name: Miriam Gonzalez
 organization: 
 

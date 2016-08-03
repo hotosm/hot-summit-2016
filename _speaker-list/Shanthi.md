@@ -1,5 +1,5 @@
 ---
-img: speaker_bbq
+img: dummy_m
 name: Shanthi
 organization: 
 
