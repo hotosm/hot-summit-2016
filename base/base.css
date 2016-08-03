@@ -841,8 +841,8 @@ table {
     text-align:left;
     vertical-align:top;
     border:1px solid #ccc;
-    border-left-color: rgba(0,0,0,0);
-    border-right-color: rgba(0,0,0,0);
+    border-left: 1px dashed #ddd;
+    border-right: 1px dashed #ddd;
   }
   table th:first-child{
   }

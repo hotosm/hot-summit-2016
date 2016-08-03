@@ -1,9 +1,10 @@
 ---
-img: speaker_bbq
+img: Noah
 name: Noah Ahles
-organization: 
+organization: University of Vermont Spatial Analysis Laboratory
 
 talk: "From Drones to Mapping Parties: The Role of Universities in Disaster Response"
 
-twitter-handle: Noah Ahles
+twitter-handle: NoahAhles77
+osm-handle: nahles
 ---

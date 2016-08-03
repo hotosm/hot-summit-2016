@@ -4,7 +4,7 @@ type: "session"
 time: 09:00 - 09:20
 
 event: Keynote 1
-location: Somewhere
+location: Tanganyika Room
 speakers:
 - name: Keynote Speaker
   org: Some Organization

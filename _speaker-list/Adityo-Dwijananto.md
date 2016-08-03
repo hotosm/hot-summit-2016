@@ -1,9 +1,10 @@
 ---
-img: speaker_bbq
+img: Adityo
 name: Adityo Dwijananto
-organization: 
+organization: HOT Indonesia
 
 talk: "Workshop: InaSAFE for Disaster Impact Analysis"
 
 twitter-handle: adisadit
+osm-handle: Adityo
 ---

@@ -1,7 +1,7 @@
 ---
-img: speaker_bbq
+img: Chad
 name: Chad Blevins
-organization: 
+organization: USAID
 
 talks: 
 - talk: "A Collaborative Approach to Data-Driven Malaria Prevention"

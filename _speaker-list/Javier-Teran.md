@@ -1,7 +1,7 @@
 ---
 img: speaker_bbq
 name: Javier Teran
-organization: 
+organization: UN OCHA The Humanitarian Data Exchange
 
 talk: Humanitarian Mapping of Refugee Camp in Greece
 

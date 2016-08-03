@@ -6,6 +6,7 @@ markdown: rdiscount
 collections:
   speaker-list:
     output: true
-  event-list:
+  schedule-list:
     output: true
-    
+  events:
+    ouput: true

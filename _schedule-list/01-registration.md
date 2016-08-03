@@ -4,5 +4,5 @@ type: "admin"
 time: 08:00 - 08:45
 
 event: Register
-location: Room A
+location: Tanganyika Room
 ---

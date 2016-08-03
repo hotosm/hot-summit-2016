@@ -1,9 +1,10 @@
 ---
-img: speaker_bbq
+img: Audrey
 name: Audrey Lessard-Fontaine
-organization: 
+organization: MSF
 
 talk: "GeoKM: A GIS system to monitor MSF activities"
 
-twitter-handle:
+twitter-handle: 
+osm-handle: lessarau
 ---

@@ -1,5 +1,5 @@
 ---
-img: speaker_bbq
+img: Javier
 name: Javier Carranza
 organization: 
 

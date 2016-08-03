@@ -37,6 +37,9 @@ published: true
 					{% if p.twitter-handle %}
 					<div class='speaker--twitter'><a href="https://twitter.com/{{ p.twitter-handle }}"><img src="../img/twitter.svg"></img>{{ p.twitter-handle }}</a></div>
 					{% endif %}
+					{% if p.osm-handle %}
+					<div class='speaker--osm'><a href="https://www.openstreetmap.org/user/{% if osm-link %}{{ osm-link }}{% else %}{{ p.osm-handle }}{% endif %}"><img src="../img/osm_logo.png"></img>{{ p.osm-handle }}</a></div>
+					{% endif %}
 				</div>
 			</div>
 		{% endfor %}

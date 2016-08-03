@@ -1,9 +1,10 @@
 ---
-img: speaker_bbq
+img: Sajjad
 name: Sajjad Anwar
-organization: 
+organization: Mapbox
 
 talk: "Middle Ground - between the field and volunteers"
 
 twitter-handle: geohacker
+osm-handle: geohacker
 ---

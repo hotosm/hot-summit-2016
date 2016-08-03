@@ -1,7 +1,7 @@
 ---
 img: speaker_bbq
 name: María José Greloni
-organization: 
+organization: Wingu
 
 talk: "Community Building and Local Government Engagement"
 

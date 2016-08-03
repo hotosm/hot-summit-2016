@@ -1,9 +1,10 @@
 ---
-img: speaker_bbq
+img: emily
 name: Emily Eros
-organization: 
+organization: American Red Cross
 
 talk: "Field Mapping at Scale"
 
 twitter-handle: emilyeros
+osm-handle: emilyeros
 ---

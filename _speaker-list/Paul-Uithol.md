@@ -1,9 +1,9 @@
 ---
-img: speaker_bbq
+img: Paul
 name: Paul Uithol
-organization: 
+organization: HOT
 
 talk: "Ramani Huria: mapping Dar es Salaam with high-tech tools and local communities"
 
-twitter-handle:
+twitter-handle: PaulUithol
 ---
