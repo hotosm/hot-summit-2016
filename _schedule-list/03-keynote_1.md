@@ -8,5 +8,5 @@ location: Tanganyika Room
 speakers:
 - name: Alexander De Croo
   org: Belgium Deputy Prime Minister and Minister of Development Cooperation, Digital Agenda, Telecommunications and Postal Services
-description: Details comming soon.
+description: Details coming soon....
 ---
