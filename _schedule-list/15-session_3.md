@@ -25,6 +25,6 @@ session-b-talks:
 - title: "Building Data Preparedness in Indonesia"
   speakers:
     - name: Yantisa Akhadi
-      org: Humanitarian OpenStreetMap Team
+      org: HOT
       
 ---
