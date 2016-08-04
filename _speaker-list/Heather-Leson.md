@@ -1,5 +1,5 @@
 ---
-img: Heather_Leson
+img: Heather_leson
 name: Heather Leson
 organization: Texton Techs, HOT Board Member
 
