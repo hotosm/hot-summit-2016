@@ -828,18 +828,36 @@ table {
   background-color:transparent;
   border-collapse:collapse;
   border-spacing:0;
-  margin-bottom:20px;
+  margin-bottom:1em;
   }
-  table th,
+  table th{
+    text-align: left;
+    vertical-align: top;
+    padding-left: 1em;
+    padding-bottom: 0.2em;
+  }
   table td {
-    padding:4px 0;
+    padding: 0;
     text-align:left;
     vertical-align:top;
-    border-bottom:1px solid #ddd;
-    }
+    border:1px solid #ccc;
+    border-left: 1px dashed #ddd;
+    border-right: 1px dashed #ddd;
+  }
+  table th:first-child{
+  }
+  table td:first-child {
+    line-height: 24px;
+    padding:2em 0 8px 1em;
+    width:116px;
+    line-height:28px;
+  }
   table th {
-    font-weight:700;
     }
+  table th:last-child{
+    float: right;
+    padding-right: 1em;
+  }
   table thead th {
     vertical-align:bottom;
     }
