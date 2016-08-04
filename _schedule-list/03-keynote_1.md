@@ -8,5 +8,5 @@ location: Tanganyika Room
 speakers:
 - name: BTC Representative
   org: Belgian Development Agency BTC
-description: HOT Summit 2016 HOT, BTC, welcome message.
+description: HOT Summit 2016 host, BTC, welcome message.
 ---
