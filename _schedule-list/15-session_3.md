@@ -19,22 +19,12 @@ session-a-talks:
     - name: Noah Ahles
       org: University of Vermont Spatial Analysis Laboratory
 
-session-b-event: Case Studies in Health and society
-session-b-location: Thac Ba
+session-b-event: Case Study in Indonesia
+session-b-location: Thac Ba Room
 session-b-talks:
-- title: "Using local and satellite mapping to fight female genital mutilation in Tanzania"
+- title: "Building Data Preparedness in Indonesia"
   speakers:
-    - name: Egle Marija Ramanauskaite
-      org: Crowd2Map Tanzania
-- title: "A Collaborative Approach to Data-Driven Malaria Prevention"
-  speakers:
-    - name: Courtney Clark
-      org: Peace Corps
-    - name: Chad Blevins
-      org: USAID
-- title: "Fighting Mosquito-borne diseases"
-  speakers:
-    - name: Milo van der Linden
-      org: Interactive Community Mappers, Jamaica
+    - name: Yantisa Akhadi
+      org: Humanitarian OpenStreetMap Team
       
 ---
