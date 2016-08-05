@@ -3,10 +3,12 @@ permalink: pretty
 exclude: [src, CNAME]
 markdown: rdiscount
 
+permalink: pretty
+
 collections:
   speaker-list:
     output: true
   schedule-list:
     output: true
   events:
-    ouput: true
+    output: true

@@ -697,7 +697,7 @@ thead th:nth-child(2n){
 }
 
 
-/** Spakers
+/** Speakers
 ===================================*/
 
 .speaker--image{
@@ -786,4 +786,75 @@ thead th:nth-child(2n){
     background-color: #f0f0f0;
     border-radius: 1em;
     border-bottom: 3px solid #ddd;
+}
+
+/** Event Page
+===================================*/
+
+.event--page--details{
+  display: inline-block;
+  width:100%;
+  margin-bottom:1.5em;
+  color: #aaa;
+}
+
+.event--page--main{
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 0 1em;
+}
+
+.event--page--time{
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.event--page--location{
+  display: inline-block;
+  margin-left: 1em;
+}
+
+.event--page--title{
+  float: none;
+  display: inline-block;
+  max-width: 800px;
+}
+
+.event--page--descrip{
+  max-width: 800px;
+}
+
+.event--page--speaking{
+  color: #aaa;
+  margin: 2.5em 0 2em;
+}
+
+.speaker--event--card{
+  max-width: 800px;
+}
+
+.speaker--event--img{
+  width: 75px;
+  height: 75px;
+  float: left;
+  border-radius: 50%;
+}
+
+.speaker--event--host{
+  float:left;
+  clear: none;
+  margin: 0.75em 0 0 1.5em;
+}
+
+.speaker--event--back{
+  margin-top:2em;
+  margin-bottom:4em;
+  clear:both;
+  max-width:150px;
+  float:left;
+}
+
+.speaker--event--button{
+  font-size: 0.9em;
 }

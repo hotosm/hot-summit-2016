@@ -1,0 +1,125 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <meta name='robots' content='{% if page.hidden %}noindex{% else %}index{% endif %}'/>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <meta name='twitter:site' content='@hotosm' />
+  <meta property='og:site_name' content='HOT Summit' />
+  <meta name='twitter:url' content='{{page.permalink}}' />
+  <meta name='twitter:domain' content='http://summit.hotosm.org/' />
+  <meta property='og:url' content='{{page.permalink}}' />
+  <meta name='twitter:title' content='{{page.title | replace:"'","&lsquo;"}}' />
+  <meta property='og:title' content='{{page.title | replace:"'","&lsquo;"}}' />
+  <meta name='twitter:description' content='{{page.content | markdownify | strip_html | trim_spaces | truncatewords: 30 | escape | replace:"'","&lsquo;" }}' />
+  <meta property='og:description' content='{{page.content | markdownify | strip_html | trim_spaces | truncatewords: 30 | escape | replace:"'","&lsquo;" }}' />
+  <meta name='twitter:image' content='{{site.baseurl}}/img/HOTsummit2016_logo.svg' />
+  <meta name='st:image' content='{{site.baseurl}}/img/HOTsummit2016_logo.svg' />
+  <meta property='og:image' content='{{site.baseurl}}/img/HOTsummit2016_logo.svg' />
+  <meta property='og:type' content='website' />
+  <meta name='twitter:card' content='summary_large_image' />
+
+  <title>{% if page.url == "/"  %}{% else %}{{page.title}} | {% endif %}HOT Summit</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+ <!--  <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.ico' type='image/x-icon' /> -->
+  <link href='http://fonts.googleapis.com/css?family=Kreon:400,700' rel='stylesheet' type='text/css'>
+	<link href='{{site.baseurl}}/base/base.css' rel='stylesheet' />
+  <link href='{{site.baseurl}}/site.css' rel='stylesheet' />
+  <link href='//api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
+  <script src='//api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
+  <script src='{{site.baseurl}}/site.js'></script>
+</head>
+<body class='{% if page.url == "/index.html" %}front{% endif %}'>
+
+<nav class='pad2 fill-red site-navigation center'>
+  <nav class='navigation-container'>
+  <a class='strong {% if page.url == "{{site.baseurl}}/index.html" or page.url == "{{site.baseurl}}/" %}active{% endif %}' href='{{site.baseurl}}/'>Home</a>
+  <a class='strong {% if page.url contains "program" %}active{% endif %}' href='{{site.baseurl}}/program/'>Program</a>
+  <a class='strong {% if page.url contains "speakers" %}active{% endif %}' href='{{site.baseurl}}/speakers/'>Speakers</a>
+  <a class='strong {% if page.url contains "venue" %}active{% endif %}' href='{{site.baseurl}}/venue/'>Venue Info</a>
+<!--   <a class='strong {% if page.url contains "scholarship" %}active{% endif %}' href='{{site.baseurl}}/scholarship/'>Scholarship</a> -->
+  <a class='strong {% if page.url contains "about" %}active{% endif %}' href='{{site.baseurl}}/about/'>About</a>
+ <a class='strong {% if page.url contains "register" %}active{% endif %}' href='https://www.eventbrite.com/e/hot-summit-2016-tickets-25408089279' target='_blank'>Register</a>
+<!--   <a href='https://hotsummit2016.eventbrite.com' target='_blank' class='strong'>Register</a> -->
+  <a class='strong {% if page.url contains "sponsor" %}active{% endif %}' href='{{site.baseurl}}/sponsor/'>Sponsor</a>
+  <a href='https://twitter.com/search?q=%23hotsummit&src=typd' target='_blank' class='hide-mobile inline small strong dark'><img src='{{ site.baseurl }}/img/twitter.svg' class = 'icon-img'/> #hotsummit</a>
+  </nav>
+</nav>
+
+
+<div class='fill-blue'>
+  <div class='liner clearfix center fill-darken3 dark col12'>
+    <h2 class='pad2'>HOT Summit 2016</h2>
+  </div>
+</div>
+
+<div class='limiter pad4y clearfix'>
+
+<div class='event--page--details'>
+  <div class='event--page--time'>{{ page.time }}</div> |
+  <div class='event--page--main'>{{ page.event }}</div> |
+  <div class='event--page--location'>{{ page.location }}</div>
+</div>
+
+<div class='event--title event--page--title'>{{ page.title }}</div>
+
+<div class='event--page--descrip'>{{ page.description }}</div>
+
+<div class='event--page--speaking'>Presented By</div>
+
+{% for s in page.speakers %}
+  <div class='speaker--event--card'>
+    <div class='speaker--image speaker--event--img' style='background-image: url("{{ site.baseurl }}/img/speaker-imgs/{{ s.img }}.jpg");'></div>
+    <div class='event--host speaker--event--host'><p><a href="{{ site.baseurl }}/speakers/#{{ s.name | remove: ' ' }}">{{ s.name }}</a>
+    {% if s.org %}
+      <p><span>{{ s.org }}</span></p>
+    {% endif %}
+    </div>
+  </div>
+{% endfor %}
+
+<div class='speaker--event--back button-box'>
+  <a href="{{ site.baseurl }}/program" class="button block speaker--event--button">Back to Program</a>
+</div>
+
+</div>
+
+<div class='pad2x show-mobile'>
+  <a href='#sponsors' class='button block'>Supporters</a>
+</div>
+
+<section class='fill-white pad2y center'>
+  <div class='limiter'>
+    <p><strong>Interested in participating?</strong> Email <a href='mailto:summit@hotosm.org'>summit@hotosm.org</a> to learn more.</p>
+  </div>
+</section>
+<footer class='col12 center fill-blue dark'>
+  <div class='fill-darken3 pad2y col12'>
+    <div class='limiter'>
+      <p class='small hide-mobile'>
+        <a href="{{site.baseurl}}/codeofconduct/">Code of Conduct</a> | <a href='http://summit.hotosm.org'>HOT Summit</a> | <a href='https://twitter.com/hotosm' target='_blank'>@hotosm</a><!-- | Photo credits: USAID, 596 acres, UCSB, Kerri Lee Smith | Logo credits: Andrew Rasner -->
+    </div>
+  </div>
+</footer>
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.hotosm.org/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 4]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.hotosm.org/piwik.php?idsite=4" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</body>
+</html>

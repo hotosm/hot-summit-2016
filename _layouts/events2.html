@@ -1,0 +1,43 @@
+---
+layout: default
+title: events
+published: true
+---
+
+<div class='fill-blue'>
+  <div class='liner clearfix center fill-darken3 dark col12'>
+    <h2 class='pad2'>HOT Summit 2016</h2>
+  </div>
+</div>
+
+
+<div class='limiter pad4y clearfix'>
+
+<div class='event--page--details'>
+	<div class='event--page--time'>{{ page.time }}</div> |
+	<div class='event--page--main'>{{ page.event }}</div> |
+	<div class='event--page--location'>{{ page.location }}</div>
+</div>
+
+<div class='event--title event--page--title'>{{ page.title }}</div>
+
+<div class='event--page--descrip'>{{ page.description }}</div>
+
+<div class='event--page--speaking'>Presented By</div>
+
+{% for s in page.speakers %}
+	<div class='speaker--event--card'>
+		<div class='speaker--image speaker--event--img' style='background-image: url("{{ site.baseurl }}/img/speaker-imgs/{{ s.img }}.jpg");'></div>
+		<div class='event--host speaker--event--host'><p><a href="{{ site.baseurl }}/speakers/#{{ s.name | remove: ' ' }}">{{ s.name }}</a>
+		{% if s.org %}
+			<p><span>{{ s.org }}</span></p>
+		{% endif %}
+		</div>
+	</div>
+{% endfor %}
+
+<div class='speaker--event--back button-box'>
+	<a href="{{ site.baseurl }}/program" class="button block speaker--event--button">Back to Program</a>
+</div>
+
+</div>

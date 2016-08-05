@@ -95,7 +95,7 @@ published: true
 					<div class="event--location lightning--location">{{ e.location }}</div>
 					<div class="event--host">
 						{% for l in e.talks %}
-							<div class="event--talk" id="{{ l.title | remove: ' ' }}"><a>{{ l.title }}</a></div>
+							<div class="event--talk" id="{{ l.title | remove: ' ' }}"><a href="/events/{{ l.link }}">{{ l.title }}</a></div>
 							<p><a href="{{ site.baseurl }}/speakers/#{{ l.speaker | remove: ' ' }}">{{ l.speaker }}</a>{% if l.org %}, 
 								<span>{{ l.org }}</span>
 							{% endif %}
