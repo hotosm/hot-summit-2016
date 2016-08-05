@@ -16,13 +16,23 @@ session-a-talks:
   speakers:
     - name: Emily Eros
       org: American Red Cross
-      
-session-b-event: Case Studies in Indonesia
-session-b-location: Thac Ba Room
+
+session-b-event: Case Studies in Health and society
+session-b-location: Thac Ba
 session-b-talks:
-- title: "Building Data Preparedness in Indonesia"
+- title: "Using local and satellite mapping to fight female genital mutilation in Tanzania"
   speakers:
-    - name: Yantisa Akhadi
-      org: Humanitarian OpenStreetMap Team
+    - name: Egle Marija Ramanauskaite
+      org: Crowd2Map Tanzania
+- title: "A Collaborative Approach to Data-Driven Malaria Prevention"
+  speakers:
+    - name: Courtney Clark
+      org: Peace Corps
+    - name: Chad Blevins
+      org: USAID
+- title: "Fighting Mosquito-borne diseases"
+  speakers:
+    - name: Milo van der Linden
+      org: Interactive Community Mappers, Jamaica
 
 ---
