@@ -10,7 +10,7 @@ talks:
 - title: "Lessons from building community: worthwhile programs to follow"
   speaker: Javier Carranza
   org: GeoCensos
-- title: Why Government's Need OSM
+- title: Why Governments Need OSM
   speaker: Namitala Gertrude
   org: OSM Zambia
 - title: Mapping with children and adolescents
