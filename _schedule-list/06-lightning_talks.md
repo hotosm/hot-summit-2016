@@ -19,5 +19,8 @@ talks:
 - title: Building a customized field mapping tool in 5 minutes
   speaker: Arun Ganesh
   org: Mapbox
+- title: "Mapping in the field, ground validation, and Field Papers in Côte d’Ivoire"
+  speaker: Brou Careme
+  org: OSM Côte d’Ivoire
   
 ---

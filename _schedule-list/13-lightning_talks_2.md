@@ -24,6 +24,9 @@ talks:
   org: International Committee of the Red Cross
 - title: "Sharing imagery during emergencies"
   speaker: Shanthi
-  org:
+  org: ANNA University
+- title: "RamaniHuria and Community Mapping - Towards Free and Open Map Data and Imagery for flood resilience in Dar es Salaam"
+  speaker: Deogratias Minja
+  org: World Bank
   
 ---

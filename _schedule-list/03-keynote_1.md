@@ -1,12 +1,12 @@
 ---
 type: "session"
 
-time: 09:00 - 09:10
+time: 09:00 - 09:20
 
-event: Belgian Development Agency Welcome 
+event: "Keynote - HOT: Where do we go from here?"
 location: Tanganyika Room
 speakers:
-- name: BTC Representative
-  org: Belgian Development Agency BTC
-description: HOT Summit 2016 host, BTC, welcome message.
+- name: Heather Leson
+  org: HOT Board of Directors
+  description: HOT is 6 years old. This is a testament to the global community and our supporters. What are some of our next steps? How can we help HOT and OSM grow as an organization and community?
 ---

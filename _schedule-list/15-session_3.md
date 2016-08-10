@@ -26,5 +26,9 @@ session-b-talks:
   speakers:
     - name: Yantisa Akhadi
       org: HOT
+- title: "InaSAFE for Disaster Impact Analysis"
+  speakers:
+    - name: Vasanthi Hargyono
+      org: HOT
       
 ---
