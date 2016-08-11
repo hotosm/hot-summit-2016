@@ -1,7 +1,7 @@
 ---
 img: Heather
 name: Heather Leson
-organization: Texton Techs, HOT Board Member
+organization: Humanitarian OpenStreetMap Team Board Member
 
 talk: "Keynote Address"
 
