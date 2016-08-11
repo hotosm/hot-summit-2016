@@ -1,7 +1,7 @@
 ---
 img: Pete
 name: Pete Masters
-organization: MSF, Disastermappers, MissingMaps
+organization: MSF, MissingMaps
 
 talk: "MapSwipe and Pybossa. Further exploration in the power of crowds."
 
