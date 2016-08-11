@@ -1,5 +1,5 @@
 ---
-img: dummy_m
+img: Martin
 name: Martin Noblecourt
 organization: CartONG
 
