@@ -26,6 +26,8 @@ session-b-talks:
   speakers:
     - name: Egle Marija Ramanauskaite
       org: Crowd2Map Tanzania
+    - name: Janet Chapman
+      org: Crowd2Map Tanzania
 - title: "A Collaborative Approach to Data-Driven Malaria Prevention"
   speakers:
     - name: Courtney Clark
