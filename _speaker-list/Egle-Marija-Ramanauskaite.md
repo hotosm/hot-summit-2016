@@ -1,10 +1,10 @@
 ---
-img: dummy_f
+img: Egle
 name: Egle Marija Ramanauskaite
 organization: Crowd2Map Tanzania
 
-talk: "Workshop: InaSAFE for Disaster Impact Analysis"
+talk: "Using local and satellite mapping to fight female genital mutilation in Tanzania"
 
-twitter-handle: 
+twitter-handle: seplute
 osm-handle: seplute
 ---
