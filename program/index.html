@@ -102,8 +102,8 @@ published: true
 							</p>
 
 							{% for s in l.speakers %}
-								<p><a href="{{ site.baseurl }}/speakers/#{{ s.name | remove: ' ' }}">{{ s.name }}</a>{% if l.org %}, 
-									<span>{{ l.org }}</span>
+								<p><a href="{{ site.baseurl }}/speakers/#{{ s.name | remove: ' ' }}">{{ s.name }}</a>{% if s.org %}, 
+									<span>{{ s.org }}</span>
 								{% endif %}
 							{% endfor %}
 						{% endfor %}

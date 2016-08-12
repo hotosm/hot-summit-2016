@@ -10,9 +10,9 @@ talks:
 - title: "The Humanitarian Data Exchange and HOT"
   speakers:
     - name: Javier Teran
-      org:
+      org: UN OCHA The Humanitarian Data Exchange
     - name: CJ Hendrix
-      org:
+      org: UN OCHA The Humanitarian Data Exchange
 - title: "Drones for humanitarian mapping and the role of OSM"
   speaker: Martin Noblecourt 
   org: CartONG
