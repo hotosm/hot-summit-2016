@@ -1,7 +1,7 @@
 ---
 type: "lightning"
 
-time: 10:00 - 10:30
+time: 14:45 - 15:15
 
 event: Lightning Talks Round II
 location: Tanganyika Room
