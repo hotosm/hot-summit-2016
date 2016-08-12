@@ -1,5 +1,5 @@
 ---
-img: dummy_m
+img: dummy_f
 name: Shanthi
 organization: 
 
