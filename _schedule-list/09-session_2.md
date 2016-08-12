@@ -16,6 +16,8 @@ session-a-talks:
   speakers:
     - name: Emily Eros
       org: American Red Cross
+    - name: David Luswata
+      org: American Red Cross
 
 session-b-event: Case Studies in Health and society
 session-b-location: Thac Ba
