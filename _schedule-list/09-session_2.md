@@ -15,9 +15,9 @@ session-a-talks:
 - title: "Field Mapping at Scale"
   speakers:
     - name: Emily Eros
-      org: American Red Cross
+      org: American Red Cross, GIS Team Lead, International Services
     - name: David Luswata
-      org: American Red Cross
+      org: American Red Cross, GIS Supervisor West Africa
 
 session-b-event: Case Studies in Health and society
 session-b-location: Thac Ba
