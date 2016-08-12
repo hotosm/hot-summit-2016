@@ -1,0 +1,9 @@
+---
+img: DavidL
+name: David Luswata
+organization: ARC GIS Supervisor for West Africa
+
+talk: "Field Mapping at Scale"
+
+twitter-handle: lusdavo
+---
