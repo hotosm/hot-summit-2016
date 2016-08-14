@@ -1,5 +1,5 @@
 ---
-img: dummy_f
+img: PatriciaS
 name: Patricia Solis
 organization: TTU
 
