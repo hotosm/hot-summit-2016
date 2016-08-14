@@ -1,5 +1,5 @@
 ---
-img: dummy_f
+img: Nuala
 name: Nuala Cowan
 organization: GWU
 
