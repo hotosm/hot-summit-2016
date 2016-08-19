@@ -22,5 +22,8 @@ talks:
 - title: "Mapping in the field, ground validation, and Field Papers in Côte d’Ivoire"
   speaker: Brou Careme
   org: OSM Côte d’Ivoire
-  
+- title: "Mapillary Humanitarian Mapping Kit for Sustainable Development"
+  speaker: Sandra Uddback
+  org: Mapillary
+
 ---
