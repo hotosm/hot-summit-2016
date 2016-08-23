@@ -16,9 +16,9 @@
   <meta property='og:title' content='{{page.title | replace:"'","&lsquo;"}}' />
   <meta name='twitter:description' content='{{page.content | markdownify | strip_html | trim_spaces | truncatewords: 30 | escape | replace:"'","&lsquo;" }}' />
   <meta property='og:description' content='{{page.content | markdownify | strip_html | trim_spaces | truncatewords: 30 | escape | replace:"'","&lsquo;" }}' />
-  <meta name='twitter:image' content='{{site.baseurl}}/img/HOTsummit2016_logo.svg' />
-  <meta name='st:image' content='{{site.baseurl}}/img/HOTsummit2016_logo.svg' />
-  <meta property='og:image' content='{{site.baseurl}}/img/HOTsummit2016_logo.svg' />
+  <meta name='twitter:image' content='{{site.domain}}{{site.baseurl}}/img/HOTsummit2016_logo.svg' />
+  <meta name='st:image' content='{{site.domain}}{{site.baseurl}}/img/HOTsummit2016_logo.svg' />
+  <meta property='og:image' content='{{site.domain}}{{site.baseurl}}/img/HOTsummit2016_logo.svg' />
   <meta property='og:type' content='website' />
   <meta name='twitter:card' content='summary_large_image' />
 
@@ -26,26 +26,26 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
  <!--  <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.ico' type='image/x-icon' /> -->
   <link href='http://fonts.googleapis.com/css?family=Kreon:400,700' rel='stylesheet' type='text/css'>
-	<link href='{{site.baseurl}}/base/base.css' rel='stylesheet' />
-  <link href='{{site.baseurl}}/site.css' rel='stylesheet' />
+	<link href='{{site.domain}}{{site.baseurl}}/base/base.css' rel='stylesheet' />
+  <link href='{{site.domain}}{{site.baseurl}}/site.css' rel='stylesheet' />
   <link href='//api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.css' rel='stylesheet' />
   <script src='//api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
-  <script src='{{site.baseurl}}/site.js'></script>
+  <script src='{{site.domain}}{{site.baseurl}}/site.js'></script>
 </head>
 <body class='{% if page.url == "/index.html" %}front{% endif %}'>
 
 <nav class='pad2 fill-red site-navigation center'>
   <nav class='navigation-container'>
-  <a class='strong {% if page.url == "{{site.baseurl}}/index.html" or page.url == "{{site.baseurl}}/" %}active{% endif %}' href='{{site.baseurl}}/'>Home</a>
-  <a class='strong {% if page.url contains "program" %}active{% endif %}' href='{{site.baseurl}}/program/'>Program</a>
-  <a class='strong {% if page.url contains "speakers" %}active{% endif %}' href='{{site.baseurl}}/speakers/'>Speakers</a>
-  <a class='strong {% if page.url contains "venue" %}active{% endif %}' href='{{site.baseurl}}/venue/'>Venue Info</a>
+  <a class='strong {% if page.url == "{{site.baseurl}}/index.html" or page.url == "{{site.domain}}{{site.baseurl}}/" %}active{% endif %}' href='{{site.baseurl}}/'>Home</a>
+  <a class='strong {% if page.url contains "program" %}active{% endif %}' href='{{site.domain}}{{site.baseurl}}/program/'>Program</a>
+  <a class='strong {% if page.url contains "speakers" %}active{% endif %}' href='{{site.domain}}{{site.baseurl}}/speakers/'>Speakers</a>
+  <a class='strong {% if page.url contains "venue" %}active{% endif %}' href='{{site.domain}}{{site.baseurl}}/venue/'>Venue Info</a>
 <!--   <a class='strong {% if page.url contains "scholarship" %}active{% endif %}' href='{{site.baseurl}}/scholarship/'>Scholarship</a> -->
-  <a class='strong {% if page.url contains "about" %}active{% endif %}' href='{{site.baseurl}}/about/'>About</a>
+  <a class='strong {% if page.url contains "about" %}active{% endif %}' href='{{site.domain}}{{site.baseurl}}/about/'>About</a>
  <a class='strong {% if page.url contains "register" %}active{% endif %}' href='https://www.eventbrite.com/e/hot-summit-2016-tickets-25408089279' target='_blank'>Register</a>
 <!--   <a href='https://hotsummit2016.eventbrite.com' target='_blank' class='strong'>Register</a> -->
-  <a class='strong {% if page.url contains "sponsor" %}active{% endif %}' href='{{site.baseurl}}/sponsor/'>Sponsor</a>
-  <a href='https://twitter.com/search?q=%23hotsummit&src=typd' target='_blank' class='hide-mobile inline small strong dark'><img src='{{ site.baseurl }}/img/twitter.svg' class = 'icon-img'/> #hotsummit</a>
+  <a class='strong {% if page.url contains "sponsor" %}active{% endif %}' href='{{site.domain}}{{site.baseurl}}/sponsor/'>Sponsor</a>
+  <a href='https://twitter.com/search?q=%23hotsummit&src=typd' target='_blank' class='hide-mobile inline small strong dark'><img src='{{site.domain}}{{ site.baseurl }}/img/twitter.svg' class = 'icon-img'/> #hotsummit</a>
   </nav>
 </nav>
 
@@ -62,22 +62,22 @@
       <h2 class='space-bottom1'>Sponsors</h2>
         <div class = 'sponsor--logos__container'>
           <div class = 'sponsor--logos'> 
-            <img src = "{{ site.baseurl }}/img/sponsor-logos/hot_logo.png"></img>
-            <img src = "{{ site.baseurl }}/img/sponsor-logos/arc_logo.png"></img>            
-            <img src = "{{ site.baseurl }}/img/sponsor-logos/mb_logo.png"></img>
-            <img src = "{{ site.baseurl }}/img/sponsor-logos/mapsme_logo.png"></img>
+            <img src = "{{site.domain}}{{ site.baseurl }}/img/sponsor-logos/hot_logo.png"></img>
+            <img src = "{{site.domain}}{{ site.baseurl }}/img/sponsor-logos/arc_logo.png"></img>            
+            <img src = "{{site.domain}}{{ site.baseurl }}/img/sponsor-logos/mb_logo.png"></img>
+            <img src = "{{site.domain}}{{ site.baseurl }}/img/sponsor-logos/mapsme_logo.png"></img>
           </div>
           <div class = 'sponsor--logos height-fix'>
-            <img src = "{{ site.baseurl }}/img/sponsor-logos/mz_logo.png"></img>
-            <img src = "{{ site.baseurl }}/img/sponsor-logos/kza_logo.png"></img>
-            <img src = "{{ site.baseurl }}/img/sponsor-logos/dg_logo.png"></img>
-            <img src = "{{ site.baseurl }}/img/sponsor-logos/ds_logo.png"></img>
+            <img src = "{{site.domain}}{{ site.baseurl }}/img/sponsor-logos/mz_logo.png"></img>
+            <img src = "{{site.domain}}{{ site.baseurl }}/img/sponsor-logos/kza_logo.png"></img>
+            <img src = "{{site.domain}}{{ site.baseurl }}/img/sponsor-logos/dg_logo.png"></img>
+            <img src = "{{site.domain}}{{ site.baseurl }}/img/sponsor-logos/ds_logo.png"></img>
           </div>
           <div class = 'sponsor--logos'>
-            <img src = "{{ site.baseurl }}/img/sponsor-logos/usaid_logo.png"></img>
-            <img src = "{{ site.baseurl }}/img/sponsor-logos/mly_logo.png"></img>         
-            <img src = "{{ site.baseurl }}/img/sponsor-logos/spd_logo.png"></img>
-            <img src = "{{ site.baseurl }}/img/sponsor-logos/btc_logo.png"></img>
+            <img src = "{{site.domain}}{{ site.baseurl }}/img/sponsor-logos/usaid_logo.png"></img>
+            <img src = "{{site.domain}}{{ site.baseurl }}/img/sponsor-logos/mly_logo.png"></img>         
+            <img src = "{{site.domain}}{{ site.baseurl }}/img/sponsor-logos/spd_logo.png"></img>
+            <img src = "{{site.domain}}{{ site.baseurl }}/img/sponsor-logos/btc_logo.png"></img>
           </div>
         </div>
 
@@ -96,7 +96,7 @@
   <div class='fill-darken3 pad2y col12'>
     <div class='limiter'>
       <p class='small hide-mobile'>
-        <a href="{{site.baseurl}}/codeofconduct/">Code of Conduct</a> | <a href='http://summit.hotosm.org'>HOT Summit</a> | <a href='https://twitter.com/hotosm' target='_blank'>@hotosm</a><!-- | Photo credits: USAID, 596 acres, UCSB, Kerri Lee Smith | Logo credits: Andrew Rasner -->
+        <a href="{{site.domain}}{{site.baseurl}}/codeofconduct/">Code of Conduct</a> | <a href='http://summit.hotosm.org'>HOT Summit</a> | <a href='https://twitter.com/hotosm' target='_blank'>@hotosm</a><!-- | Photo credits: USAID, 596 acres, UCSB, Kerri Lee Smith | Logo credits: Andrew Rasner -->
     </div>
   </div>
 </footer>
