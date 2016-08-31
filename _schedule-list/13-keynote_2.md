@@ -1,7 +1,7 @@
 ---
 type: "session"
 
-time: 09:20 - 09:45
+time: 14:45 - 15:00
 
 event: "Keynote - Mapping for Resilience"
 location: Tanganyika Room
