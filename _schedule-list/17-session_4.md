@@ -1,7 +1,7 @@
 ---
 type: "split-session"
 
-time: 16:30 - 17:15
+time: 16:45 - 17:30
 
 session-a-event: Case Studies in Informal Environments
 session-a-location: Tanganyika
@@ -22,8 +22,12 @@ session-b-talks:
   speakers:
     - name: Miriam Gonzalez
       org: Telenav and OpenStreetMap MX
-- title: "Community Building and Local Government Engagement"
+- title: "Rural Accessibility Mapping"
   speakers:
-    - name: María José Greloni
-      org: Wingu
+    - name: Steven Ottens
+      org: World Bank
+- title: "OSM, Distributed Ledger Technology, and Early Warning Systems"
+  speakers:
+    - name: Ben Cessa
+      org: Government of Mexico Open Data Team
 ---

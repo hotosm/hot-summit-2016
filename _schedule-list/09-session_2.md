@@ -1,7 +1,7 @@
 ---
 type: "split-session"
 
-time: 11:45 - 12:30
+time: 11:30 - 12:30
 
 session-a-event: "Tools for remote, tools for field"
 session-a-location: Tanganyika Room
@@ -30,8 +30,6 @@ session-b-talks:
       org: Crowd2Map Tanzania
 - title: "A Collaborative Approach to Data-Driven Malaria Prevention"
   speakers:
-    - name: Courtney Clark
-      org: Peace Corps
     - name: Chad Blevins
       org: USAID
 - title: "Fighting Mosquito-borne diseases"

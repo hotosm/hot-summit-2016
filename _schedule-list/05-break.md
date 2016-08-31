@@ -1,7 +1,7 @@
 ---
 type: "admin"
 
-time: 09:45 - 10:00
+time: 10:15 - 10:30
 
 event: Break
 location: 

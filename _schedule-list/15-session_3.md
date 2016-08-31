@@ -1,7 +1,7 @@
 ---
 type: "split-session"
 
-time: 15:30 - 16:15
+time: 15:45 - 16:30
 
 session-a-event: University initiatives and engagement
 session-a-location: Tanganyika

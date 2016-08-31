@@ -1,7 +1,7 @@
 ---
 type: "lightning"
 
-time: 10:00 - 10:30
+time: 9:20 - 10:15
 
 event: Lightning Talks
 location: Tanganyika Room
@@ -25,5 +25,8 @@ talks:
 - title: "Mapillary Humanitarian Mapping Kit for Sustainable Development"
   speaker: Sandra Uddback
   org: Mapillary
+- title: "Healthsites.io: Building tools and community for health facility data"
+  speaker: Mark Herringer
+  org: Healthsites.io
 
 ---
