@@ -22,8 +22,5 @@ talks:
 - title: "Drones for humanitarian mapping and the role of OSM"
   speaker: Martin Noblecourt 
   org: CartONG
-- title: "RamaniHuria and Community Mapping - Towards Free and Open Map Data and Imagery for flood resilience in Dar es Salaam"
-  speaker: Deogratias Minja
-  org: World Bank
   
 ---

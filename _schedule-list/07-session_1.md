@@ -6,13 +6,11 @@ time: 10:30 - 11:30
 session-a-event: Case Studies in Tanzania
 session-a-location: Tanganyika Room
 session-a-talks:
-- title: "Ramani Huria: mapping Dar es Salaam with high-tech tools and local communities"
+- title: "Ramani Huria: Mapping Dar es Salaam with high-tech tools and local communities"
   speakers:
     - name: Paul Uithol
       org: HOT
-    - name: Innocent Maholi
-      org: HOT
-- title: "Community Mapping With The Help of Drones and Street View Mapping"
+- title: "Ramani Huria: Building sustainable communities"
   speakers:
     - name: Innocent Maholi
       org: HOT
