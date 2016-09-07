@@ -3,9 +3,8 @@ img: innocent
 name: Innocent Maholi
 organization: HOT
 
-talks: 
-- talk: "Ramani Huria: mapping Dar es Salaam with high-tech tools and local communities"
-- talk: "Community Mapping With The Help of Drones and Street View Mapping"
+talks:
+- talk: "Ramani Huria: Building sustainable communities"
 
 twitter-handle: InnocentMaholi
 osm-handle: innocent maholi
