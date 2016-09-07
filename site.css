@@ -243,6 +243,10 @@ input[type='submit'],
     color: #333;
     }
 
+.faq-em {
+  font-style: italic;
+}
+
 /**
  * BxSlider v4.0 - Fully loaded, responsive content slider
  * http://bxslider.com
@@ -786,4 +790,12 @@ thead th:nth-child(2n){
     background-color: #f0f0f0;
     border-radius: 1em;
     border-bottom: 3px solid #ddd;
+}
+
+.faq-q{
+  padding: 1em 0 0.75em;
+}
+
+.container-footer-fix{
+  margin-bottom: 2em;
 }
