@@ -791,3 +791,11 @@ thead th:nth-child(2n){
     border-radius: 1em;
     border-bottom: 3px solid #ddd;
 }
+
+.faq-q{
+  padding: 1em 0 0.75em;
+}
+
+.container-footer-fix{
+  margin-bottom: 2em;
+}
