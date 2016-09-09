@@ -22,5 +22,8 @@ talks:
 - title: "Drones for humanitarian mapping and the role of OSM"
   speaker: Martin Noblecourt 
   org: CartONG
+- title: "Open Schools Kenya"
+  speaker: Zach Muindi
+  org: Map Kibera Trust
   
 ---
