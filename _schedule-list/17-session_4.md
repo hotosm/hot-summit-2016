@@ -26,7 +26,7 @@ session-b-talks:
   speakers:
     - name: Steven Ottens
       org: World Bank
-- title: "OSM, Distributed Ledger Technology, and Early Warning Systems"
+- title: "Creating a Distributed Early Warning System"
   speakers:
     - name: Ben Cessa
       org: Government of Mexico Open Data Team
