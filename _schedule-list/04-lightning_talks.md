@@ -1,7 +1,7 @@
 ---
 type: "lightning"
 
-time: 9:20 - 10:15
+time: 9:40 - 10:15
 
 event: Lightning Talks
 location: Tanganyika Room
@@ -22,5 +22,8 @@ talks:
 - title: "Healthsites.io: Building tools and community for health facility data"
   speaker: Mark Herringer
   org: Healthsites.io
+- title: "MapAction: A view of In-field Humanitarian Mapping"
+  speaker: Ian Holt
+  org: MapAction
 
 ---
